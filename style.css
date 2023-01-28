@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root {
+  font-size: 18px;
+  --Poppins: "Poppins", sans-serif;
+  --Open-sans: "Open Sans", sans-serif;
+
+  --Pink: hsl(322, 100%, 66%);
+
+  --Pale: hsl(193, 100%, 96%);
+  --Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-one header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 1rem;
+}
+.try-free {
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: var(--Open-sans);
+  border-radius: 20px;
+  border: none;
+  padding: 3px 25px;
+  background-color: white;
+  color: var(--Dark-Cyan);
+  box-shadow: 0px 3px 3px 3px rgba(133, 133, 133, 0.04);
+}
+.section-one {
+  height: 100%;
+  padding-bottom: 40px;
+  background-image: url(./images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: var(--Pale);
+}
+.section-one main {
+  height: calc(100% - 80px);
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-one main .article-one {
+  color: var(--Dark-Cyan);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.article-one h1 {
+  font-family: var(--Poppins);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.article-one p {
+  font-family: var(--Open-sans);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.article-one button {
+  font-family: var(--Poppins);
+  align-self: center;
+  color: white;
+  background-color: var(--Pink);
+  border: none;
+  width: fit-content;
+  border-radius: 40px;
+  padding: 12px 60px;
+  box-shadow: 0px 3px 6px 3px rgba(235, 91, 163, 0.1);
+}
+.article-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.article-two img {
+  width: 90%;
+}
+.section-two,
+.section-three,
+.section-four {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-two main,
+.section-three main,
+.section-four main {
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  height: calc(100% - 100px);
+  width: 100%;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section-two main .art-one img,
+.section-three main .art-one img,
+.section-four main .art-one img {
+  width: 100%;
+}
+.section-two main .art-two,
+.section-three main .art-two,
+.section-four main .art-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-two main .art-two h2,
+.section-three main .art-two h2,
+.section-four main .art-two h2 {
+  font-size: 1.2rem;
+  font-family: var(--Poppins);
+  color: var(--Dark-Cyan);
+}
+.section-two main .art-two p,
+.section-three main .art-two p,
+.section-four main .art-two p {
+  font-size: 0.8rem;
+  font-family: var(--Open-sans);
+  color: var(--Grayish-Blue);
+}
+.section-four {
+  margin-bottom: 200px;
+}
+.section-five {
+  position: relative;
+}
+.section-five .art-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  width: calc(100% - 40px);
+  background-color: white;
+  border-radius: 5px;
+  padding: 40px 20px;
+  box-shadow: 0px -5px 20px -10px rgb(0 0 0 / 10%);
+}
+.section-five .art-one h2 {
+  color: var(--Dark-Cyan);
+  font-family: var(--Poppins);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.section-five .art-one button {
+  color: white;
+  font-family: var(--Open-sans);
+  font-size: 0.6rem;
+  border: none;
+  background-color: var(--Pink);
+  border-radius: 40px;
+  padding: 8px 20px;
+  font-weight: 700;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.08);
+}
+footer {
+  font-size: 0.7rem;
+  font-family: var(--Open-sans);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  gap: 40px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: var(--Dark-Cyan);
+}
+footer .logo {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg)
+    brightness(202%) contrast(102%);
+}
+footer .social-copy span {
+  color: white;
+}
+.c-one {
+  display: flex;
+  gap: 20px;
+}
+footer > div {
+  display: grid;
+  gap: 20px;
+}
+.social {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+.social a {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: solid white 1px;
+  border-radius: 50%;
+}
+.social-copy p {
+  text-align: center;
+}
+button:active {
+  opacity: 0.7;
+}
+
+@media (min-width: 775px) {
+  button {
+    cursor: pointer;
+  }
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .section-one {
+    background-image: url(./images/bg-hero-desktop.svg);
+  }
+  .section-one main {
+    padding-left: 0px;
+    padding-right: 0px;
+    flex-direction: row;
+  }
+  .section-one main .article-one {
+    width: 800px;
+    padding-right: 50px;
+    text-align: start;
+  }
+  .article-one button {
+    align-self: flex-start;
+  }
+  .article-one h1 {
+    font-size: 1.8rem;
+  }
+  .article-one p {
+    font-size: 1rem;
+  }
+  .article-two img {
+    width: 100%;
+  }
+
+  .section-two main,
+  .section-three main,
+  .section-four main {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 100px;
+    gap: 100px;
+  }
+  .section-two main .art-two,
+  .section-three main .art-two,
+  .section-four main .art-two {
+    text-align: start;
+  }
+  .section-two main .art-two h2,
+  .section-three main .art-two h2,
+  .section-four main .art-two h2 {
+    font-size: 1.4rem;
+  }
+  .section-two main .art-two p,
+  .section-three main .art-two p,
+  .section-four main .art-two p {
+    font-size: 1rem;
+  }
+  .section-five .art-one {
+    width: 50%;
+  }
+  footer {
+    flex-direction: row;
+    align-items: center;
+  }
+  footer > div {
+    max-width: 45%;
+  }
+  .social-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+  }
+  .social {
+    justify-content: flex-start;
+  }
+  .hover-line p {
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+  }
+  .hover-line p::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-duration: 0.3s;
+  }
+  .hover-line p:hover::before {
+    transform: scaleX(1);
+  }
+  button:hover {
+    opacity: 0.7;
+  }
+}
